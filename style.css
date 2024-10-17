@@ -1,0 +1,127 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.group-members {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.input-section h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#graph-container {
+    height: 600px;  /* Increased height */
+    margin: 0 auto;
+    background-color: #fafafa;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+#result-message, #mst-info, #shortest-path-info {
+    padding: 15px;
+    background-color: #e7f3fe;
+    border: 1px solid #b6d4fe;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-section, .button-section {
+    width: 48%;
+}
+
+.middle-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.middle-section .card {
+    flex: 1;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .top-section, .middle-section {
+        flex-direction: column;
+    }
+
+    .input-section, .button-section, .middle-section .card {
+        width: 100%;
+    }
+}

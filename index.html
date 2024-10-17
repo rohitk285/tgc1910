@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Theory Toolkit</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="wrapper">
+        <h1>CGT Assignment 1</h1>
+
+        <h4 class="group-members">Asil Khalifa (106123015), Rohit Kannan (106123109), L Hitesh Reddy (106123073)</h4>
+        <div class="top-section">
+            <div class="card input-section">
+                <h2>Graph Settings</h2>
+                <label for="degree-sequence">Enter Degree Sequence (comma-separated):</label>
+                <input type="text" id="degree-sequence" placeholder="e.g., 3,3,3,3,4">
+                
+                <label for="sourceVertex">Source Vertex:</label>
+                <input type="number" id="sourceVertex" min="0" value="0">
+            </div>
+
+            <div class="card button-section">
+                <button id="generateButton">Generate Graph</button>
+                <button id="eulerButton">Check Euler Path/Circuit</button>
+                <button id="calculateConnectivity">Calculate Connectivity</button>
+                <button id="generateMST">Generate MST</button>
+                <button id="shortestPathButton">Find Shortest Paths</button>
+            </div>
+        </div>
+
+        <div class="middle-section">
+            <div id="result-message" class="card"></div>
+            <div id="mst-info" class="card"></div>
+            <div id="shortest-path-info" class="card"></div>
+        </div>
+
+        <div id="graph-container" class="card"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
